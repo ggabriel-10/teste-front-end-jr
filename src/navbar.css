@@ -1,0 +1,144 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 77.78%;
+    height: 5vh;
+    width: 100%;
+    padding-top: 0.5rem;
+    gap: 4rem;
+    background: #ffffff;
+}
+
+.header-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 110%;
+    margin-top: 1rem;
+    gap: 5rem;
+}
+
+.header-icon input {
+    height: 2.5rem;
+    width: 30rem;
+    padding-left: 1rem;
+    color: #ffffff;
+    background-color: darkgray;
+    border: none;
+    border-radius: 0.5rem;
+}
+.header-icon input::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.header-icon input:hover  {
+    background-color: #F71963;
+    color: #ffffff;
+    
+}
+
+.header-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.header-icons:hover{
+    cursor: pointer;
+}
+
+.header-icons img {
+    height: 2rem;
+}
+
+.header-bottom {
+    width: 120%;
+    margin-top: 2rem;
+}
+
+.header-bottom ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+
+}
+
+.header-bottom-destaque {
+    color: rgb(255, 25, 151);
+
+}
+
+.header-bottom li {
+    list-style: none;
+    color: gray;
+    cursor: pointer;
+}
+.header-bottom li:hover {
+    color: rgb(255, 25, 151);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.header-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("img/backeground-sale.png");
+    width: 145%;
+    height: 60vh;
+    padding-left: 2rem;
+    gap: 1rem;
+}
+
+.header-banner h1 {
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    margin-left: 2rem;
+}
+
+.header-banner h3 {
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    margin-left: 2rem;
+}
+
+.header-banner input {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #F71963;
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+}
+
+.header-banner input:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background-color: #F71963;
+    color: #ffffff;
+}
+
+@media (min-width: 1454px){
+    .header-banner{
+        background-color: #F71963;
+        width: 200%;
+    }
+}

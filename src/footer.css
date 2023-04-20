@@ -1,0 +1,52 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40vh;
+    background-color: #2A2A2A;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+
+.footer-sobre-nos{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 3rem;
+}
+.footer-sobre-nos ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-informacoes{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 2rem;
+}
+.footer-informacoes ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-news-img{
+    width: 85%;
+}
