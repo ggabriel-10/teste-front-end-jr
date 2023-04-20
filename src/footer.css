@@ -1,4 +1,4 @@
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -9,11 +9,12 @@ footer{
     padding: 20px;
     text-align: center;
 }
-li{
+
+li {
     list-style: none;
 }
 
-.footer-sobre-nos{
+.footer-sobre-nos {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -22,6 +23,7 @@ li{
     padding-top: 1rem;
     gap: 3rem;
 }
+
 .footer-sobre-nos ul {
     display: flex;
     flex-direction: column;
@@ -30,7 +32,7 @@ li{
     gap: 1rem;
 }
 
-.footer-informacoes{
+.footer-informacoes {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -39,6 +41,7 @@ li{
     padding-top: 1rem;
     gap: 2rem;
 }
+
 .footer-informacoes ul {
     display: flex;
     flex-direction: column;
@@ -47,6 +50,75 @@ li{
     gap: 0.5rem;
 }
 
-.footer-news-img{
-    width: 85%;
+.footer-news {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    width: 30%;
+    height: 110%;
+    gap: 1.5rem;
+    border-radius: 10px;
+}
+
+.footer-news-title {
+    color: #3F3F40;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+
+}
+
+.footer-news-description {
+    color: #3F3F40;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer-news-input {
+    display: flex;
+    width: 90%;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid;
+    
+}
+.button-input{
+    width: 80%;
+    padding-left: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.button-input-ok {
+    background-color: #F71963;
+    color: #ffffff;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 10px;
+    border: none;
+}
+.button-input-ok:hover{
+    cursor: pointer;
+    background-color: #f33272;
+}
+
+@media (min-width: 1454px){
+    .footer-news{
+        gap: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 90%;
+    }
+    .button-input-ok{
+        width: 5rem;
+
+    }
 }
