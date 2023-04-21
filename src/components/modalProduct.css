@@ -1,0 +1,77 @@
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+.modal-product{
+    position: fixed;
+    background-color: aliceblue;
+    width: 40%;
+    height: 60%;
+    top: 50%;
+    left: 15%;
+    border-radius: 1rem;
+    padding: 1rem;
+    transform: translate(50%, -50%);
+    Overflow: hidden;
+    max-height: 55%;
+}
+.modal-product-close{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-product-buttonClose{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 59, 59);
+    cursor: pointer;
+    
+}
+
+.modal-main-product-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    /* background-color: aqua; */
+    margin-top: 2.5rem;
+    margin-bottom: 10rem;
+}
+.modal-main-product-item-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.2rem;
+    width: 120%;
+    height: 40%;
+    padding: 1rem;
+}
+
+.modal-old-price{
+    text-decoration: line-through;
+    color: #020202;
+}
+.modal-description{
+    font-size: 32px;
+    word-break: normal;
+    /* background-color: #363636; */
+}
+.modal-frete{
+    color: #F71963;
+}
+.modal-new-price{
+    font-size: 32px;
+    color: #041E50;
+}
+
+

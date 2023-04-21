@@ -94,7 +94,7 @@ li {
     width: 80%;
     padding-left: 1rem;
     border-radius: 10px;
-    border: none;
+    border: solid 0.5;
 }
 
 .button-input-ok {

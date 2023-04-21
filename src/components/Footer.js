@@ -1,5 +1,5 @@
 import './footer.css';
-import News from './img/Footer/news.png';
+
 function Footer() {
   return (
     <footer>

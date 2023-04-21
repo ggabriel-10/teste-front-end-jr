@@ -1,16 +1,18 @@
 import './content.css';
 import {useState, useEffect} from 'react';
+import ModalProduct from './ModalProduct';
 import api from './api';
-import Corrida from './img/Main/corrida 1.png';
-import Saude from './img/Main/cuidados-de-saude 1.png';
-import Ferramentas from './img/Main/ferramentas 1.png';
-import Moda from './img/Main/moda 1.png';
-import Eletronicos from './img/Main/monitorar-tablet-e-smartohone 1.png';
-import Mercado from './img/Main/supermercados 1.png';
-import Bebidas from './img/Main/whiskey.png';
+import Corrida from '../img/Main/corrida 1.png';
+import Saude from '../img/Main/cuidados-de-saude 1.png';
+import Ferramentas from '../img/Main/ferramentas 1.png';
+import Moda from '../img/Main/moda 1.png';
+import Eletronicos from '../img/Main/monitorar-tablet-e-smartohone 1.png';
+import Mercado from '../img/Main/supermercados 1.png';
+import Bebidas from '../img/Main/whiskey.png';
 
 function Content(){
     const [products, setProducts] = useState([]);
+    const [openModal, setOpenModal] = useState(false);
 
     useEffect(() => {
         api.get('/produtos.json').then(response => {
@@ -19,6 +21,14 @@ function Content(){
             console.log(error);
         })
     }, []);
+
+    const handleClick = (index) => {
+        setOpenModal(true);
+        // Lógica para lidar com o clique no objeto
+        console.log(`Índice do objeto clicado: ${index}`);
+        // Exemplo de como exibir o índice no HTML
+        
+      };
     return(
 
         <main>
@@ -86,11 +96,11 @@ function Content(){
                     <li>VER TODOS</li>
                 </ul>
             </div>
-
+            
             <div  className='main-principal'>
                 {products.map((product, index) => (
                         <div className='main-product' key={index} >
-                            <div className='main-product-item'>
+                            <div className='main-product-item'  onClick={()=> setOpenModal(true)}>
                                 <img src={product.photo} alt="eletronicos" />
                                 <div className='main-product-item-description'>
                                     <p className='name'>{product.productName}</p>
@@ -105,6 +115,19 @@ function Content(){
                         </div>
                 ) )}
             </div>
+            <ModalProduct isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
+                {products.map((product, index) => (
+                                <div className='modal-main-product-item'  onClick={()=> setOpenModal(true)}>
+                                    <img src={product.photo} alt="eletronicos" />
+                                    <div className='modal-main-product-item-description'>
+                                        <p className='modal-description'>{product.descriptionShort}</p>
+                                        <p className='modal-new-price'>{product.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
+                                        <p>Ou em 2x de R$ {product.price/2}</p>
+                                        <p className='modal-frete'>frete gratis</p>
+                                    </div>
+                                </div>
+                    ) )}
+            </ModalProduct>
 
     
     </main>

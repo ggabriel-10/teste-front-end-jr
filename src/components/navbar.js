@@ -1,12 +1,12 @@
-    import './navbar.css';
-import Group from './img/Group 35.png';
-import Compra from './img/Header/compra-segura.png';
-import FreteGratis from './img/Header/frete-gratis.png';
-import ParcelaCompra from './img/Header/parcelar-compra.png';
-import Coracao from './img/Heart.png';
-import Loja from './img/Group.png';
-import Usuario from './img/UserCircle.png';
-import Carrinho from './img/ShoppingCart.png';
+import './navbar.css';
+import Group from '../img/Group 35.png';
+import Compra from '../img/Header/compra-segura.png';
+import FreteGratis from '../img/Header/frete-gratis.png';
+import ParcelaCompra from '../img/Header/parcelar-compra.png';
+import Coracao from '../img/Heart.png';
+import Loja from '../img/Group.png';
+import Usuario from '../img/UserCircle.png';
+import Carrinho from '../img/ShoppingCart.png';
 
 
 function Navbar() {
