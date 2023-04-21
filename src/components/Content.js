@@ -22,13 +22,6 @@ function Content(){
         })
     }, []);
 
-    const handleClick = (index) => {
-        setOpenModal(true);
-        // Lógica para lidar com o clique no objeto
-        console.log(`Índice do objeto clicado: ${index}`);
-        // Exemplo de como exibir o índice no HTML
-        
-      };
     return(
 
         <main>
